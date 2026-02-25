@@ -107,19 +107,6 @@ This demonstrates strong discriminative ability across psychological classes.
 
 ---
 
-## 💾 Model Saving & Loading
-
-The trained model is saved and reloadable without retraining:
-
-```python
-from transformers import DistilBertForSequenceClassification, DistilBertTokenizer
-
-model = DistilBertForSequenceClassification.from_pretrained("mental_health_model")
-tokenizer = DistilBertTokenizer.from_pretrained("mental_health_model")
-```
-
----
-
 ## 🧪 Manual Inference Example
 
 ```python
@@ -152,9 +139,11 @@ classifier("I feel anxious and scared about my future.")
 ```
 Mind-Well-ML/
 │
-├── mind_well_ml.py
+├── mind_well_ML.py
 ├── README.md
-├── MIND_WELL_ML_LEARNING_NOTES.md
+├── mind-well-ML-learning.md
+├── mind-well-ML-documentation.md
+├── requirements.txt
 └── mental-health.csv (dataset)
 ```
 
